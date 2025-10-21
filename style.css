@@ -13,6 +13,13 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+p, li, nav, footer {
+  font-family: 'Cormorant Garamond', serif;
+}
 
 header {
   background-color: #3e3e3e;
