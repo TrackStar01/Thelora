@@ -78,3 +78,26 @@ footer {
   border-top: 2px solid gold;
   font-size: 0.9rem;
 }
+
+.map-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.map-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid gold;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.region-lore {
+  background-color: rgba(10, 10, 30, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
