@@ -55,3 +55,67 @@ footer {
   padding: 1rem;
   background-color: #d8cfc4;
 }
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  background-color: #fdfaf6;
+  color: #333;
+}
+
+/* Ensure content fits screen */
+main, header, footer {
+  padding: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive layout for hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+/* Navigation tweaks */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+nav li {
+  margin: 0 0.5rem;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+
