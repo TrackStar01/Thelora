@@ -125,6 +125,15 @@ h2 {
   margin-bottom: 1rem;
 }
 
+h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: 0.5rem auto;
+  background: linear-gradient(to right, #8a2be2, #e6d6ff, #8a2be2);
+  box-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
+}
 
 /* Chronicle section */
 .campaign-chronicle {
