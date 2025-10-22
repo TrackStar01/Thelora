@@ -79,19 +79,19 @@ footer {
   font-size: 0.9rem;
 }
 
-.map-container {
-  text-align: center;
-  padding: 2rem;
-}
-
 .map-image {
   width: 100%;
-  max-width: 100%;
+  max-width: 1000px;
   height: auto;
-  border: 2px solid gold;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  display: block;
+  margin: 0 auto;
 }
+
+.map-container {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
 
 
 .region-lore {
