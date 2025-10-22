@@ -40,6 +40,17 @@ body::before {
   100% { background-position: 1000px 1000px; }
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at center, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+  z-index: 0;
+  pointer-events: none;
+}
+
+
 /* Fantasy headers and accents */
 h1, h2 {
   font-family: 'Uncial Antiqua', serif;
@@ -129,9 +140,14 @@ nav a:hover {
 
 /* Main content sections */
 main {
-  max-width: 900px;
+  background-color: rgba(255, 248, 220, 0.92); /* light parchment tone */
+  padding: 2rem;
   margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 2;
 }
 
 .intro, .structure, .regions-preview, .campaign-hook {
@@ -179,4 +195,12 @@ footer {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.intro, .structure, .campaign-chronicle, .campaign-hook {
+  color: #2c1f1f;
+}
+
+h2 {
+  font-weight: 700;
 }
