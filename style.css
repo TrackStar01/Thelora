@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Base fantasy background */
 body {
   font-family: 'Cinzel', serif;
   background: url('assets/obsidian-runes.jpg') center center / cover no-repeat fixed;
@@ -40,76 +39,28 @@ body::before {
   100% { background-position: 1000px 1000px; }
 }
 
-body::after {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: radial-gradient(circle at center, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
-  z-index: 0;
-  pointer-events: none;
-}
-
-
-/* Fantasy headers and accents */
-h1, h2 {
-  font-family: 'Uncial Antiqua', serif;
-  color: #d8b4ff;
-  text-shadow: 0 0 8px #8a2be2;
-}
-
-a:hover {
-  color: #ffcc66;
-  text-shadow: 0 0 6px #ffcc66;
-}
-
-/* Section styling */
-.campaign-chronicle {
-  background-color: rgba(255, 248, 220, 0.9);
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-left: 6px solid #8a2be2;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  font-size: 1.1rem;
-}
-
-.event-log {
-  list-style: none;
-  padding-left: 0;
-}
-
-.event-log li {
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  border-left: 3px solid #8a2be2;
-}
-
-.update-note {
-  font-style: italic;
-  color: #6b4c9a;
-  margin-top: 1rem;
-}
-
 /* Header */
 header {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #eae6dc;
-  border-bottom: 2px solid #ccc;
+  background-color: rgba(20, 10, 30, 0.85);
+  border-bottom: 2px solid #8a2be2;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-/* Fantasy header font */
 header h1 {
   font-family: 'Uncial Antiqua', serif;
   font-size: 3rem;
-  color: #4b0082;
+  color: #d8b4ff;
+  text-shadow: 0 0 8px #8a2be2;
+  margin-top: 1rem;
 }
 
-/* Tagline */
 .tagline {
   font-family: 'Cinzel Decorative', cursive;
   font-size: 1.2rem;
-  color: #6b4c9a;
+  color: #bfa3ff;
+  margin-bottom: 1rem;
 }
 
 .crest {
@@ -130,84 +81,73 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #444;
+  color: #e0d8ff;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #8a2be2;
+  color: #ffcc66;
+  text-shadow: 0 0 6px #ffcc66;
 }
 
-/* Main content sections */
+/* Main content scroll panel */
 main {
   background-image: url('assets/scroll-texture.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(60, 40, 20, 0.6); /* fallback tone */
+  background-color: rgba(60, 40, 20, 0.6);
   backdrop-filter: blur(4px);
   padding: 2rem;
   margin: 2rem auto;
   max-width: 900px;
   border-radius: 12px;
-  box-shadow: 0 0 25px rgba(138, 43, 226, 0.3);
+  box-shadow:
+    inset 0 0 10px rgba(255, 255, 255, 0.05),
+    0 0 25px rgba(138, 43, 226, 0.3);
   position: relative;
   z-index: 2;
 }
 
-.intro, .structure, .campaign-chronicle, .campaign-hook {
-  background-color: #fff;
-  padding: 2rem;
+/* Section styling */
+.intro, .structure, .campaign-hook, .campaign-chronicle {
   margin-bottom: 2rem;
-  border-left: 6px solid #8a2be2;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  color: #2c1f1f;
+  color: #f5f0e6;
 }
 
 h2 {
-  color: #4b0082;
+  font-family: 'Uncial Antiqua', serif;
+  color: #d8b4ff;
   font-weight: 700;
   text-shadow: 0 0 4px rgba(138, 43, 226, 0.4);
+  margin-bottom: 1rem;
 }
 
-ul {
-  list-style: disc;
-  padding-left: 1.5rem;
+/* Chronicle section */
+.campaign-chronicle {
+  border-top: 2px solid rgba(138, 43, 226, 0.4);
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+
+.event-log {
+  list-style: none;
+  padding-left: 0;
+}
+
+.event-log li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid #8a2be2;
+}
+
+.update-note {
+  font-style: italic;
+  color: #bfa3ff;
   margin-top: 1rem;
 }
 
-.map-link {
-  display: inline-block;
-  margin-top: 1rem;
-  font-weight: bold;
-  color: #00BFFF;
-  text-decoration: none;
-}
-
-.map-link:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-.map-image {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-h2 {
-  font-weight: 700;
-}
-
+/* Map container */
 .map-container {
   background-color: rgba(30, 20, 50, 0.85);
   padding: 1rem;
@@ -218,4 +158,94 @@ h2 {
   margin: 2rem auto;
   position: relative;
   z-index: 2;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Interactive map regions */
+.region:hover {
+  stroke: #FFD700;
+  stroke-width: 3;
+  fill: rgba(255, 215, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Region page scroll styling */
+.region-scroll {
+  background-image: url('assets/scroll-texture.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(60, 40, 20, 0.6);
+  backdrop-filter: blur(4px);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(138, 43, 226, 0.3);
+  color: #e0d8ff;
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional corner glyphs */
+.corner-glyph {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url('assets/glyph-corner.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.corner-glyph.top-left { top: -10px; left: -10px; }
+.corner-glyph.top-right { top: -10px; right: -10px; }
+.corner-glyph.bottom-left { bottom: -10px; left: -10px; }
+.corner-glyph.bottom-right { bottom: -10px; right: -10px; }
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  main, .map-container, .region-scroll {
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 100%;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
 }
