@@ -6,11 +6,39 @@
 }
 
 body {
-  font-family: 'Georgia', serif;
-  background-color: #fdfaf6;
-  color: #2c2c2c;
-  line-height: 1.6;
+  font-family: 'Cinzel', serif;
+  background: url('assets/parchment-texture.jpg') repeat;
+  background-size: cover;
+  color: #3b2f2f;
+  line-height: 1.7;
   padding: 1rem;
+}
+
+/* Section styling */
+.campaign-chronicle {
+  background-color: rgba(255, 248, 220, 0.9);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-left: 6px solid #8a2be2;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+}
+
+.event-log {
+  list-style: none;
+  padding-left: 0;
+}
+
+.event-log li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid #8a2be2;
+}
+
+.update-note {
+  font-style: italic;
+  color: #6b4c9a;
+  margin-top: 1rem;
 }
 
 /* Header */
@@ -21,16 +49,18 @@ header {
   border-bottom: 2px solid #ccc;
 }
 
+/* Fantasy header font */
 header h1 {
-  font-size: 2.5rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 3rem;
+  color: #4b0082;
 }
 
+/* Tagline */
 .tagline {
-  font-style: italic;
-  color: #555;
-  margin-bottom: 1rem;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 1.2rem;
+  color: #6b4c9a;
 }
 
 .crest {
