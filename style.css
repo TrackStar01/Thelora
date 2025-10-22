@@ -5,13 +5,51 @@
   box-sizing: border-box;
 }
 
+/* Base fantasy background */
 body {
   font-family: 'Cinzel', serif;
-  background: url('assets/parchment-texture.jpg') repeat;
-  background-size: cover;
-  color: #3b2f2f;
+  background: url('assets/obsidian-runes.jpg') center center / cover no-repeat fixed;
+  background-color: #0e0b16;
+  color: #e0d8ff;
   line-height: 1.7;
   padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Threadlight shimmer overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(138,43,226,0.05) 0px,
+    rgba(138,43,226,0.05) 2px,
+    transparent 2px,
+    transparent 6px
+  );
+  animation: shimmer 20s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}
+
+/* Fantasy headers and accents */
+h1, h2 {
+  font-family: 'Uncial Antiqua', serif;
+  color: #d8b4ff;
+  text-shadow: 0 0 8px #8a2be2;
+}
+
+a:hover {
+  color: #ffcc66;
+  text-shadow: 0 0 6px #ffcc66;
 }
 
 /* Section styling */
