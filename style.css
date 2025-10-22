@@ -23,12 +23,21 @@ header {
 
 header h1 {
   font-size: 2.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .tagline {
   font-style: italic;
   color: #555;
+  margin-bottom: 1rem;
+}
+
+.crest {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Navigation */
@@ -50,39 +59,42 @@ nav a:hover {
   color: #8a2be2;
 }
 
-/* Main content */
+/* Main content sections */
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-.region-lore {
+.intro, .structure, .regions-preview, .campaign-hook {
   background-color: #fff;
   padding: 2rem;
+  margin-bottom: 2rem;
   border-left: 6px solid #8a2be2;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-/* Map styles */
-.map-container {
-  text-align: center;
-  padding: 2rem 1rem;
+h2 {
+  margin-bottom: 0.5rem;
+  color: #8a2be2;
 }
 
-.map-image {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
 }
 
-.crest {
-  max-width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.map-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #00BFFF;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -91,25 +103,4 @@ footer {
   padding: 2rem 1rem;
   font-size: 0.9rem;
   color: #777;
-}
-
-/* Optional: Tooltip styling via title tag */
-svg [title]:hover::after {
-  content: attr(title);
-  position: absolute;
-  background: #333;
-  color: #fff;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  white-space: nowrap;
-}
-
-/* Optional: Add glow effect on hover */
-svg .region:hover {
-  stroke: #FFD700;
-  stroke-width: 3;
-  fill: rgba(255, 215, 0, 0.2);
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
