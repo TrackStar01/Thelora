@@ -3,39 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thelora Map</title>
+  <title>Thelora Interactive Map</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Thelora – The Western Realms</h1>
-    <p class="tagline">Explore the lands shaped by fate</p>
+    <h1>Thelora</h1>
+    <p class="tagline">A world woven in fate and flame</p>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="factions.html">Factions</a></li>
-        <li><a href="npcs.html">NPCs</a></li>
-        <li><a href="prophecies.html">Prophecies</a></li>
       </ul>
     </nav>
   </header>
-
-  <main class="map-container">
-    <img src="assets/Thelora.jpg" alt="Map of Thelora" usemap="#thelora-map" class="map-image" />
-    <map name="thelora-map">
-      <area shape="circle" coords="300,200,40" href="shardlands.html" alt="The Shardlands" title="The Shardlands" />
-      <area shape="circle" coords="500,250,40" href="verdant-fold.html" alt="Verdant Fold" title="Verdant Fold" />
-      <area shape="circle" coords="700,300,40" href="myrric-expanse.html" alt="The Myrric Expanse" title="The Myrric Expanse" />
-      <area shape="circle" coords="400,400,40" href="scorchglass-flats.html" alt="Scorchglass Flats" title="Scorchglass Flats" />
-      <area shape="circle" coords="600,450,40" href="maw-of-eron.html" alt="The Maw of Eron" title="The Maw of Eron" />
-      <area shape="circle" coords="200,500,40" href="sable-reaches.html" alt="The Sable Reaches" title="The Sable Reaches" />
-      <area shape="circle" coords="800,550,40" href="emberdrift-isles.html" alt="The Emberdrift Isles" title="The Emberdrift Isles" />
-      <area shape="circle" coords="350,600,40" href="iskarn-tundra.html" alt="The Iskarn Tundra" title="The Iskarn Tundra" />
-    </map>
+  <main>
+    <section class="map-container">
+      <object type="image/svg+xml" data="assets/thelora-map.svg" class="map-image"></object>
+    </section>
   </main>
-
   <footer>
     <p>© 2025 Chase's Thelora Campaign</p>
   </footer>
 </body>
 </html>
+
