@@ -213,7 +213,7 @@ p, li {
 
 /* Region page scroll styling */
 .region-scroll {
-  background-image: url('assets/gray-scroll-texture.jpg');
+  background-image: url('assets/gray-scroll-texture.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
