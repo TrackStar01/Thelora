@@ -9,11 +9,12 @@ body {
   font-family: 'Cinzel', serif;
   background: url('assets/obsidian-runes.jpg') center center / cover no-repeat fixed;
   background-color: #0e0b16;
-  color: #e0d8ff;
+  color: #e6d6ff;
   line-height: 1.7;
   padding: 1rem;
   position: relative;
   z-index: 1;
+  text-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
 }
 
 /* Threadlight shimmer overlay */
@@ -51,7 +52,7 @@ header {
 h1 {
   font-family: 'Uncial Antiqua', serif;
   font-size: 3rem;
-  color: #e6d6ff; /* brighter lavender */
+  color: #e6d6ff;
   text-shadow:
     0 0 6px rgba(138, 43, 226, 0.5),
     0 0 12px rgba(255, 255, 255, 0.1);
@@ -95,7 +96,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #e0d8ff;
+  color: #e6d6ff;
   font-weight: bold;
 }
 
@@ -110,7 +111,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(60, 40, 20, 0.6);
+  background-color: rgba(40, 40, 50, 0.7); /* neutral gray tint */
   backdrop-filter: blur(4px);
   padding: 2rem;
   margin: 2rem auto;
@@ -126,12 +127,13 @@ main {
 /* Section styling */
 .intro, .structure, .campaign-hook, .campaign-chronicle {
   margin-bottom: 2rem;
-  color: #f5f0e6;
+  color: #e6d6ff;
+  text-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
 }
 
 h2 {
   font-family: 'Uncial Antiqua', serif;
-  color: #e6d6ff; /* brighter lavender */
+  color: #e6d6ff;
   font-weight: 700;
   text-shadow:
     0 0 6px rgba(138, 43, 226, 0.5),
@@ -147,6 +149,13 @@ h2::after {
   margin: 0.5rem auto;
   background: linear-gradient(to right, #8a2be2, #e6d6ff, #8a2be2);
   box-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
+}
+
+p, li {
+  color: #e6d6ff;
+  text-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 /* Chronicle section */
@@ -177,9 +186,9 @@ h2::after {
 .map-container {
   background-color: rgba(30, 20, 50, 0.85);
   padding: 1rem;
-  border: 2px solid rgba(138, 43, 226, 0.3); /* softened purple */
+  border: 2px solid rgba(138, 43, 226, 0.3);
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(138, 43, 226, 0.2); /* gentler glow */
+  box-shadow: 0 0 12px rgba(138, 43, 226, 0.2);
   max-width: 1000px;
   margin: 2rem auto;
   position: relative;
@@ -208,16 +217,17 @@ h2::after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(60, 40, 20, 0.6);
+  background-color: rgba(40, 40, 50, 0.7); /* neutral gray tint */
   backdrop-filter: blur(4px);
   padding: 2rem;
   margin: 2rem auto;
   max-width: 900px;
   border-radius: 12px;
   box-shadow: 0 0 25px rgba(138, 43, 226, 0.3);
-  color: #e0d8ff;
+  color: #e6d6ff;
   position: relative;
   z-index: 2;
+  text-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
 }
 
 /* Optional corner glyphs */
@@ -246,47 +256,4 @@ h2::after {
   to { opacity: 1; }
 }
 
-/* Responsive layout */
-@media screen and (max-width: 768px) {
-  main, .map-container, .region-scroll {
-    padding: 1rem;
-    margin: 1rem;
-    max-width: 100%;
-  }
-
-  header h1 {
-    font-size: 2.2rem;
-  }
-
-  .tagline {
-    font-size: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 2rem;
-  padding: 1rem;
-  font-family: 'Cinzel', serif;
-  font-size: 1rem;
-  color: #e6d6ff; /* brighter lavender */
-  text-shadow: 0 0 6px rgba(138, 43, 226, 0.5);
-}
-
-footer a {
-  color: #e6d6ff;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(230, 214, 255, 0.4);
-}
-
-footer a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-}
+/* Responsive
