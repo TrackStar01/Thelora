@@ -303,3 +303,19 @@ footer a:hover {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
+.glow-box {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgba(138, 43, 226, 0.6);
+  border-radius: 8px;
+  background-color: rgba(30, 20, 50, 0.4);
+  color: #e6d6ff;
+  text-shadow:
+    0 0 6px rgba(138, 43, 226, 0.5),
+    0 0 12px rgba(230, 214, 255, 0.3);
+  box-shadow:
+    0 0 8px rgba(138, 43, 226, 0.4),
+    0 0 16px rgba(138, 43, 226, 0.2);
+  font-family: 'Cinzel', serif;
+}
+
