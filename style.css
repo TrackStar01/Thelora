@@ -107,7 +107,7 @@ nav a:hover {
 
 /* Main content scroll panel */
 main {
-  background-image: url('assets/scroll-texture.jpg');
+  background-image: url('assets/gray-scroll-texture.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
