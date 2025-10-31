@@ -107,7 +107,7 @@ nav a:hover {
 
 /* Main content scroll panel */
 main {
-  background-image: url('assets/gray-scroll-texture.png');
+  background-image: url('assets/dark-gray-scroll-texture.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -213,7 +213,7 @@ p, li {
 
 /* Region page scroll styling */
 .region-scroll {
-  background-image: url('assets/gray-scroll-texture.png');
+  background-image: url('assets/dark-gray-scroll-texture.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
