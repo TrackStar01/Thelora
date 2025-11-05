@@ -359,11 +359,12 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
-  background-color: #111;
+  background-color: #0b0614; /* deep cosmic violet */
   padding: 0 2rem;
-  border-left: 2px solid #444;
-  border-right: 2px solid #444;
-  border-bottom: 2px solid #444;
+  border-left: 2px solid #5b21b6;
+  border-right: 2px solid #5b21b6;
+  border-bottom: 2px solid #5b21b6;
   font-family: 'Uncial Antiqua', serif;
-  color: #ccc;
+  color: #d8b4fe;
+  text-shadow: 0 0 6px #9333ea;
 }
