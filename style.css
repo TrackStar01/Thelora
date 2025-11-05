@@ -368,3 +368,7 @@ a {
   color: #d8b4fe;
   text-shadow: 0 0 6px #9333ea;
 }
+
+.centered {
+  text-align: center;
+}
