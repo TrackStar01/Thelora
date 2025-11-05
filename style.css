@@ -327,8 +327,9 @@ a {
 }
 
 .accordion {
-  background: linear-gradient(to right, #2c2c2c, #1a1a1a);
-  color: #e0cda9;
+  background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+  color: #c8a2ff; /* soft lavender */
+  text-shadow: 0 0 8px #a855f7; /* glowing violet */
   font-family: 'Cinzel', serif;
   font-size: 1.3rem;
   font-weight: 600;
@@ -338,18 +339,21 @@ a {
   text-align: left;
   cursor: pointer;
   border-bottom: 1px solid #444;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .accordion:hover {
-  background: linear-gradient(to right, #3a3a3a, #222);
-  color: #fff;
+  background: linear-gradient(to right, #2e2e2e, #3a3a3a);
+  color: #e0b3ff;
+  text-shadow: 0 0 12px #d580ff;
 }
 
 .accordion.active {
-  background: linear-gradient(to right, #444, #222);
-  color: #ffd700;
+  background: linear-gradient(to right, #3a3a3a, #1f1f1f);
+  color: #e9caff;
+  text-shadow: 0 0 14px #c084fc;
 }
+
 
 .panel {
   max-height: 0;
