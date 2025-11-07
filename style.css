@@ -219,22 +219,21 @@ p, li {
 
 /* Map container */
 .map-container {
-  background-color: rgba(30, 20, 50, 0.85);
+  width: 90vw;
+  max-width: none;
+  margin: 2rem auto;
   padding: 1rem;
+  background-color: rgba(30, 20, 50, 0.85);
   border: 2px solid rgba(138, 43, 226, 0.3);
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(138, 43, 226, 0.2);
-  max-width: 1000px;
-  margin: 2rem auto;
   position: relative;
   z-index: 2;
 }
 
 .map-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width: 90vw;
+  max-width: none;
 }
 
 /* Interactive map regions */
