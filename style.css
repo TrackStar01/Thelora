@@ -319,7 +319,7 @@ footer {
 }
 
 footer a {
-  font-size:18px;
+  font-size:1.6rem;
   color: #e6d6ff;
   text-decoration: none;
   border-bottom: 1px solid rgba(230, 214, 255, 0.4);
