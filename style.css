@@ -217,23 +217,27 @@ p, li {
   margin-top: 1rem;
 }
 
-/* Map container */
 .map-container {
   width: 90vw;
   max-width: none;
   margin: 2rem auto;
   padding: 1rem;
+  box-sizing: border-box;
   background-color: rgba(30, 20, 50, 0.85);
   border: 2px solid rgba(138, 43, 226, 0.3);
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(138, 43, 226, 0.2);
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .map-image {
-  width: 90vw;
+  width: 100%;
   max-width: none;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Interactive map regions */
