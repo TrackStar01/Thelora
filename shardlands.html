@@ -154,12 +154,12 @@
         } else {
           panel.style.maxHeight = panel.scrollHeight + "px";
 
-          // 🔽 Scroll slightly past the panel
+          // 🔽 Scroll slightly below the panel, based on its height
           setTimeout(() => {
-            const offset = 350; // pixels to scroll past the top
             const panelTop = panel.getBoundingClientRect().top + window.pageYOffset;
+            const extraOffset = Math.min(panel.scrollHeight * 0.3, 300); // scroll 30% of panel height, max 300px
             window.scrollTo({
-              top: panelTop - offset,
+              top: panelTop - extraOffset,
               behavior: "smooth"
             });
           }, 200);
@@ -168,9 +168,6 @@
     });
   });
 </script>
-
-
-
 
 </body>
 </html>
