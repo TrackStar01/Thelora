@@ -156,18 +156,21 @@
         } else {
           panel.style.maxHeight = panel.scrollHeight + "px";
 
-          // 🔽 Auto-scroll to the opened panel
+          // 🔽 Scroll slightly past the panel
           setTimeout(() => {
-            panel.scrollIntoView({
-              behavior: "smooth",
-              block: "start"
+            const offset = 100; // pixels to scroll past the top
+            const panelTop = panel.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+              top: panelTop - offset,
+              behavior: "smooth"
             });
-          }, 200); // slight delay to allow maxHeight to apply
+          }, 200);
         }
       });
     });
   });
 </script>
+
 
 
 
