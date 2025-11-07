@@ -158,6 +158,13 @@ main {
   z-index: 2;
 }
 
+main.map-page {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /* Section styling */
 .intro, .structure, .campaign-hook, .campaign-chronicle {
   margin-bottom: 2rem;
