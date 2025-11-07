@@ -149,15 +149,25 @@
       btn.addEventListener("click", function () {
         this.classList.toggle("active");
         const panel = this.nextElementSibling;
+
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
         } else {
           panel.style.maxHeight = panel.scrollHeight + "px";
+
+          // 🔽 Auto-scroll to the opened panel
+          setTimeout(() => {
+            panel.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+          }, 200); // slight delay to allow maxHeight to apply
         }
       });
     });
   });
 </script>
+
 
 
 </body>
