@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>The Myrric Expanse</h1>
+    <h1 class="cursive-text">The Myrric Expanse</h1>
     <p class="tagline">Where silence stretches beyond the stars</p>
     <nav>
       <ul>
@@ -17,13 +17,43 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="region-lore">
+  <main class="map-page">
+    <section class="region-lore centered">
       <p>Vast and windswept, the Myrric Expanse is a place of echoes and starlight. Prophets claim the Loom hums beneath its sands.</p>
     </section>
   </main>
   <footer>
-    <p>© 2025 Chase's Thelora Campaign</p>
+    <p><a href="myrric-expanse.html"> Return to top of page</a></p>
+    <p><a href="index.html">← Return to Homepage</a></p>
   </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const acc = document.querySelectorAll(".accordion");
+    acc.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+
+          // 🔽 Scroll slightly below the panel, based on its height
+          setTimeout(() => {
+            const panelTop = panel.getBoundingClientRect().top + window.pageYOffset;
+            const extraOffset = Math.min(panel.scrollHeight * 0.3, 300); // scroll 30% of panel height, max 300px
+            window.scrollTo({
+              top: panelTop - extraOffset,
+              behavior: "smooth"
+            });
+          }, 200);
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
