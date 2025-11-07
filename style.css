@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Windsong';
+  src: url('assets/Windsong-webfont.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Cinzel Decorative', serif;
   background: url('assets/obsidian-runes.jpg') center center / cover no-repeat fixed;
