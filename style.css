@@ -125,6 +125,7 @@ nav ul {
 }
 
 nav a {
+  font-size: 18px;
   text-decoration: none;
   color: #e6d6ff;
   font-weight: bold;
