@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'Windsong';
-  src: url("assets/Windsong-webfont.woff") format("woff");
+  src: url('assets/Windsong-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,6 @@ body {
   background: url('assets/obsidian-runes.jpg') center center / cover no-repeat fixed;
   background-color: #0e0b16;
   color: #e6d6ff;
-  line-height: 1.7;
   padding: 1rem;
   position: relative;
   z-index: 1;
@@ -81,7 +80,7 @@ h1::after {
 }
 
 .tagline {
-  font-family: 'Uncial Antiqua', cursive;
+  font-family: 'Windsong', 'Brush Script MT', cursive;
   font-size: 1.4rem;
   color: #bfa3ff;
   text-align: center;
@@ -329,10 +328,6 @@ footer a:hover {
   font-family: 'Cinzel', serif;
 }
 
-a {
-  font-family: 'Cinzel Decorative', serif;
-}
-
 .accordion {
   background: linear-gradient(to right, #1a1a1a, #2c2c2c);
   color: #c8a2ff; /* soft lavender */
@@ -378,4 +373,10 @@ a {
 
 .centered {
   text-align: center;
+}
+
+.cursive-text{
+  font-family: 'Windsong', cursive;
+  color: #d8b4fe;
+  text-shadow: 0 0 6px #9333ea;
 }
