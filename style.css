@@ -412,3 +412,11 @@ footer a:hover {
   color: #d8b4fe;
   text-shadow: 0 0 6px #9333ea;
 }
+
+.transparent-image {
+  background: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
