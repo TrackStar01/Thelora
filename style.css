@@ -248,6 +248,10 @@ p, li {
   margin: 0 auto;
 }
 
+.sable-map {
+  max-width: 800px;   /* shrink just this one */
+}
+
 /* Interactive map regions */
 .region:hover {
   stroke: #FFD700;
