@@ -291,22 +291,6 @@ p, li {
   margin: 0 auto;
 }
 
-.sable-map {
-  max-width: 800px;   /* shrink just this one */
-  max-width: none;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.verdant-map{
-  max-width: 800px;
-  max-width: none;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 /* Interactive map regions */
 .region:hover {
   stroke: #FFD700;
