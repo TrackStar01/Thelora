@@ -276,6 +276,15 @@ p, li {
   text-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
 }
 
+.region-lore p {
+  margin-bottom: 1rem; /* or try 0.75rem for tighter spacing */
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #e6d6ff;
+  text-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
+}
+
 /* Optional corner glyphs */
 .corner-glyph {
   position: absolute;
