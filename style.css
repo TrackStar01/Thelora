@@ -266,7 +266,7 @@ p, li {
 
 .map-container-verdant {
   width: 100%;
-  max-width: 800px;   /* smaller than the default 1000px */
+  max-width: 800px;   /* cap size for Verdant Blight */
   margin: 2rem auto;
   padding: 1rem;
   background-color: rgba(30, 20, 50, 0.85);
@@ -276,15 +276,17 @@ p, li {
   position: relative;
   z-index: 2;
   overflow: hidden;
+  box-sizing: border-box;   /* keeps padding inside max-width */
+  text-align: center;       /* centers inline SVGs */
 }
 
 .map-container-verdant img,
 .map-container-verdant svg {
-  width: 100%;   /* ensures the map fits inside */
-  height: auto;
+  max-width: 100%;   /* scale down to container width */
+  height: auto;      /* preserve proportions */
   display: block;
+  margin: 0 auto;    /* center inside container */
 }
-
 
 .map-image {
   width: 100%;
