@@ -252,13 +252,16 @@ p, li {
   position: relative;
   z-index: 2;
   overflow: hidden;
+  box-sizing: border-box;   /* ensures padding doesn’t push past max-width */
+  text-align: center;       /* centers inline SVGs */
 }
 
 .map-container-sable img,
 .map-container-sable svg {
-  width: 100%;   /* ensures the map fits inside */
-  height: auto;
+  max-width: 100%;   /* scale down to container */
+  height: auto;      /* keep proportions */
   display: block;
+  margin: 0 auto;    /* center inside container */
 }
 
 .map-container-verdant {
